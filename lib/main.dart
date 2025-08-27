@@ -41,7 +41,7 @@ class MarketEcommers extends StatelessWidget {
           builder: (context, themeMode) {
             return MaterialApp.router(
               debugShowCheckedModeBanner: false,
-              routerConfig: _appRouter.router, // استخدمه هنا
+              routerConfig: _appRouter.router, 
               theme: lightTheme,
               darkTheme: darkTheme,
               themeMode: themeMode,
