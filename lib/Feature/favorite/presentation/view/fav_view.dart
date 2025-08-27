@@ -55,7 +55,7 @@ class FavView extends StatelessWidget {
               } else if (state is GetFavError) {
                 return Center(child: Text(state.errMessage));
               } else {
-                return Center(child: Text("No products available"));
+                return const Center(child: Text("No products available"));
               }
             },
           ),

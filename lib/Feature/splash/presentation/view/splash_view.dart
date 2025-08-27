@@ -10,7 +10,7 @@ class SplashView extends StatelessWidget {
       backgroundColor:  Theme.of(context).brightness == Brightness.light
               ? Colors.white
               : Colors.black ,
-      body:SplashBody(),
+      body:const SplashBody(),
       
       );
   }

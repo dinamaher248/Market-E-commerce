@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:google_fonts/google_fonts.dart';
 import 'package:sizer/sizer.dart';
 
 import 'custom_text__widget.dart';
@@ -31,7 +30,7 @@ class CustomButton extends StatelessWidget {
         child: Center(
           child: CustomTextWidget(
             isThemeColor: false,
-            text: '$button',
+            text: button,
             color: textcolor ,
             fontSize: 18.sp,
             fontWeight: FontWeight.w500,

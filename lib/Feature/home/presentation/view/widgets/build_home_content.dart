@@ -20,7 +20,7 @@ class BuildHomeContent extends StatelessWidget {
       child: Column(
         
         children: [
-          DetailsBannersSection(
+          const DetailsBannersSection(
             showInternalLoading: false,
           ),
 

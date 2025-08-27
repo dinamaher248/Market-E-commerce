@@ -17,6 +17,7 @@ class TopSearchListWidget extends StatefulWidget {
 }
 
 class _TopSearchListWidgetState extends State<TopSearchListWidget> {
+  @override
   void initState() {
     super.initState();
     context.read<TopSearchCubit>().fetchProducts();
@@ -33,7 +34,7 @@ class _TopSearchListWidgetState extends State<TopSearchListWidget> {
       }
     }, builder: (context, State) {
       if (State is TopSearchLoading) {
-        return Center(child: CircularProgressIndicator());
+        return const Center(child: CircularProgressIndicator());
       } else if (State is TopSearchLoaded) {
         final products = State.products;
 
@@ -66,9 +67,9 @@ class _TopSearchListWidgetState extends State<TopSearchListWidget> {
           }).toList(),
         );
       } else if (State is TopSearchError) {
-        return Center(child: Text("${State.errMessage}"));
+        return Center(child: Text(State.errMessage));
       } else {
-        return Center(child: Text("No products available"));
+        return const Center(child: Text("No products available"));
       }
     });
   }

@@ -1,6 +1,5 @@
 
 import 'package:flutter/material.dart';
-import 'package:flutter/widgets.dart';
 import 'package:sizer/sizer.dart';
 
 import '../../../../../core/utils/colors.dart';
@@ -26,7 +25,7 @@ class ElevatedButtonWidget extends StatelessWidget {
       ),
       onPressed: onPressed,
       child: CustomTextWidget(
-        text: "$textButton",
+        text: textButton,
         fontSize: 16.sp,
         color: Colors.white,
       ),

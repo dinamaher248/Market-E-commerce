@@ -1,13 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
-import 'package:google_fonts/google_fonts.dart';
 import 'package:sizer/sizer.dart';
 
 import '../../../../core/routing/app_router.dart';
 import '../../../../core/utils/colors.dart';
 import '../../../../core/utils/image_pathes.dart';
 import '../../../../core/widgets/core/custom_button.dart';
-import 'widgets/dots_indicator.dart';
 import 'widgets/onboarding_widget.dart';
 
 class OnBoarding1 extends StatelessWidget {
@@ -29,7 +27,7 @@ class OnBoarding1 extends StatelessWidget {
             indexOfDOt: 0,
             
           ),
-          Spacer(),
+          const Spacer(),
           CustomButton(
             button: "Next",
             onPressed: () {

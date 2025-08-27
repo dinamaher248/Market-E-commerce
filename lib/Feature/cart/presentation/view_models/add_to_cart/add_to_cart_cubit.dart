@@ -5,7 +5,6 @@ import 'package:marketi_ecommers/core/Api/api_consumer.dart';
 import 'package:marketi_ecommers/core/cache/cache_helper.dart';
 
 import '../../../../../../core/Api/endpoints.dart';
-import '../../../data/models/add_to_cart_model.dart';
 
 class AddToCartCubit extends Cubit<AddToCartState> {
   AddToCartCubit(this.apiConsumer) : super(AddToCartInitial());

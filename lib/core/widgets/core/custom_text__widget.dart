@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 
 class CustomTextWidget extends StatelessWidget {
-  CustomTextWidget({
+  const CustomTextWidget({super.key, 
     required this.color,
     required this.fontSize,
     this.fontWeight,
@@ -21,13 +21,13 @@ class CustomTextWidget extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Text(
-      '$text',
+      text,
       textAlign: textAlign ?? TextAlign.center,
       maxLines: maxLines,
       softWrap: true, 
       overflow: TextOverflow.ellipsis,
       style: GoogleFonts.poppins(
-        color: isThemeColor? Theme.of(context).colorScheme.onBackground : color,
+        color: isThemeColor? Theme.of(context).colorScheme.onSurface : color,
         fontSize: fontSize,
         fontWeight: fontWeight,
       ),

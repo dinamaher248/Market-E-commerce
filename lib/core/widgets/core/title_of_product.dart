@@ -15,7 +15,7 @@ class TitleOfPoducts extends StatelessWidget {
     return Padding(
       padding: EdgeInsets.only(right: 55.w),
       child: CustomTextWidget(
-        text: "$title",
+        text: title,
         fontSize: 17.sp,
         fontWeight: FontWeight.w600,
         color: Colors.black,

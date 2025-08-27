@@ -2,7 +2,6 @@ import 'dart:io';
 import 'package:dio/dio.dart';
 
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:dio/dio.dart';
 import 'package:marketi_ecommers/Feature/profile/presentation/view_model/add_image/add_image_state.dart';
 import '../../../../../core/Api/api_consumer.dart';
 import '../../../../../core/cache/cache_helper.dart';

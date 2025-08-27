@@ -35,7 +35,7 @@ class _ProfileViewBodyState extends State<ProfileViewBody> {
           height: 3.h,
         ),
         // Profile Section
-        ProfileSecInfo(),
+        const ProfileSecInfo(),
         SizedBox(height: 2.h),
 
         Divider(

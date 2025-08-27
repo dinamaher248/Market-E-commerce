@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:marketi_ecommers/Feature/home/presentation/view/widgets/details_brands_section.dart';
 import 'package:marketi_ecommers/Feature/home/presentation/view/widgets/details_category_section.dart';
 import 'package:marketi_ecommers/Feature/search/presentation/view/widgets/search_widget.dart';
 import 'package:marketi_ecommers/core/widgets/core/title_of_product.dart';
@@ -21,7 +20,7 @@ class AllCategoriesPage extends StatelessWidget {
           SizedBox(
             height: 2.h,
           ),
-          SearchWidget(),
+          const SearchWidget(),
           SizedBox(
             height: 3.h,
           ),

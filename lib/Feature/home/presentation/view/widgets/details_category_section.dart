@@ -1,6 +1,4 @@
-import 'dart:typed_data';
 import 'package:flutter/material.dart';
-import 'package:flutter/widgets.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:go_router/go_router.dart';
 import 'package:marketi_ecommers/Feature/home/presentation/view/widgets/product_widget.dart';
@@ -30,6 +28,7 @@ class _DetailsCategorySectionState extends State<DetailsCategorySection> {
     context.read<CategoryCubit>().fetchProducts();
   }
 
+  @override
   Widget build(BuildContext context) {
     return BlocConsumer<CategoryCubit, BrandAndCategoryState>(
         listener: (context, State) {},
@@ -56,7 +55,7 @@ class _DetailsCategorySectionState extends State<DetailsCategorySection> {
                                   imageWidth: double.infinity,
                                   imageHight: 120,
                                   productImage: brand.ImagePath.isNotEmpty
-                                      ? "${brand.ImagePath[0].replaceAll('\\', '/')}"
+                                      ? brand.ImagePath[0].replaceAll('\\', '/')
                                       : ImagePathes.notExistPhoto,
                                   productName: brand.name,
                                   productId: brand.id,
@@ -77,7 +76,7 @@ class _DetailsCategorySectionState extends State<DetailsCategorySection> {
                               imageWidth: 24.w,
                               imageHight: 120,
                               productImage: category.ImagePath.isNotEmpty
-                                  ? "${category.ImagePath.replaceAll('\\', '/')}"
+                                  ? category.ImagePath.replaceAll('\\', '/')
                                   : ImagePathes.notExistPhoto,
                               productName: category.name,
                               productId: category.id,
@@ -96,9 +95,9 @@ class _DetailsCategorySectionState extends State<DetailsCategorySection> {
                   )
                 : const SizedBox.shrink();
           } else if (state is BrandAndCategoryError) {
-            return Center(child: Text("${state.errMessage}"));
+            return Center(child: Text(state.errMessage));
           } else {
-            return Center(child: Text("No Category available"));
+            return const Center(child: Text("No Category available"));
           }
         });
   }

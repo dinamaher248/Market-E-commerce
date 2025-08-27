@@ -1,13 +1,11 @@
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:dio/dio.dart';
-import 'package:marketi_ecommers/Feature/cart/presentation/view_models/add_to_cart/add_to_cart_state.dart';
 import 'package:marketi_ecommers/Feature/checkout/data/models/checkout_model_product.dart';
 import 'package:marketi_ecommers/Feature/checkout/presentation/view_model/checkout_cubit/checkout_state.dart';
 import 'package:marketi_ecommers/core/Api/api_consumer.dart';
 import 'package:marketi_ecommers/core/cache/cache_helper.dart';
 
 import '../../../../../../core/Api/endpoints.dart';
-import '../../../data/models/check_out_model.dart';
 
 class CheckoutCubit extends Cubit<CheckoutState> {
   CheckoutCubit(this.apiConsumer) : super(CheckoutInitial());

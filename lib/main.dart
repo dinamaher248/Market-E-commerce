@@ -26,26 +26,25 @@ void main() async {
     ),
   );
 }
+ 
 
 class MarketEcommers extends StatelessWidget {
-  const MarketEcommers({
-    super.key,
-  });
+  const MarketEcommers({super.key});
 
+  static final AppRouter _appRouter = AppRouter(); 
+    
   @override
   Widget build(BuildContext context) {
-    final appRouter = AppRouter();
     return Sizer(
       builder: (context, orientation, deviceType) {
         return BlocBuilder<ThemeCubit, ThemeMode>(
           builder: (context, themeMode) {
             return MaterialApp.router(
               debugShowCheckedModeBanner: false,
-              routerConfig: appRouter.router,
+              routerConfig: _appRouter.router, // استخدمه هنا
               theme: lightTheme,
               darkTheme: darkTheme,
               themeMode: themeMode,
-              
             );
           },
         );

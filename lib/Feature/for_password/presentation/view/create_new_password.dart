@@ -8,7 +8,7 @@ import '../../../../core/widgets/core/custom_button.dart';
 import '../../../../core/widgets/core/text_field_widget.dart';
 
 class CreateNewPassword extends StatefulWidget {
-  CreateNewPassword({super.key});
+  const CreateNewPassword({super.key});
 
   @override
   State<CreateNewPassword> createState() =>

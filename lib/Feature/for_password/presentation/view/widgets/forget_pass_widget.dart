@@ -1,14 +1,8 @@
-import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
-import 'package:google_fonts/google_fonts.dart';
 import 'package:sizer/sizer.dart';
 
 import '../../../../../core/utils/colors.dart';
-import '../../../../../core/utils/image_pathes.dart';
-import '../../../../register/presentation/view/widgets/build_label_text.dart';
-import '../../../../../core/widgets/core/text_field_widget.dart';
 import '../../../../../core/widgets/core/custom_text__widget.dart';
-import '../../../../register/presentation/view/widgets/return_sec.dart';
 
 class ForgetPassWidget extends StatelessWidget {
   ForgetPassWidget(
@@ -52,8 +46,8 @@ class ForgetPassWidget extends StatelessWidget {
             Padding(
               padding: EdgeInsets.only(left: 5.w, top: 4.5.h),
               child: CustomTextWidget(
-                text: '$textBar',
-                color: Color(0xff51526C),
+                text: textBar,
+                color: const Color(0xff51526C),
                 fontSize: 17.sp,
                 fontWeight: FontWeight.w500,
               ),
@@ -79,8 +73,8 @@ class ForgetPassWidget extends StatelessWidget {
             width: 80.w,
             child: CustomTextWidget(
               textAlign: TextAlign.center,
-              text: '$text',
-              color: Color(0xff51526C),
+              text: text,
+              color: const Color(0xff51526C),
               fontSize: 16.7.sp,
               fontWeight: FontWeight.w500,
             ),

@@ -1,4 +1,3 @@
-import 'dart:typed_data';
 
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
@@ -75,7 +74,7 @@ class _CartProductWidgetState extends State<CartProductWidget> {
                       child: CustomTextWidget(
                         color: Colors.black,
                         fontSize: 16,
-                        text: "${widget.productName}",
+                        text: widget.productName,
                         fontWeight: FontWeight.w500,
                         maxLines: 3,
                       ),
@@ -123,8 +122,8 @@ class _CartProductWidgetState extends State<CartProductWidget> {
                     IconButton(
                       padding: EdgeInsets.zero,
                       icon: quantity == 1
-                          ? Icon(Icons.delete, color: Colors.red, size: 18)
-                          : Icon(Icons.remove, color: PrimaryColor, size: 18),
+                          ? const Icon(Icons.delete, color: Colors.red, size: 18)
+                          : const Icon(Icons.remove, color: PrimaryColor, size: 18),
                       onPressed: () {
                         setState(() {
                           quantity--;
@@ -145,13 +144,13 @@ class _CartProductWidgetState extends State<CartProductWidget> {
                       padding: EdgeInsets.symmetric(horizontal: 3.h),
                       child: Text(
                         "$quantity",
-                        style: TextStyle(
+                        style: const TextStyle(
                             fontSize: 14, fontWeight: FontWeight.bold),
                       ),
                     ),
                     IconButton(
                       padding: EdgeInsets.zero,
-                      icon: Icon(Icons.add, color: PrimaryColor, size: 18),
+                      icon: const Icon(Icons.add, color: PrimaryColor, size: 18),
                       onPressed: () {
                         setState(() {
                           quantity++;

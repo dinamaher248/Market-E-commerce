@@ -39,7 +39,7 @@ class _ImageWidgetState extends State<ImageWidget> {
     return Stack(
       children: [
         ImageSec(widget: widget),
-        if (widget.IsOffer == true) OfferSec(),
+        if (widget.IsOffer == true) const OfferSec(),
         if (widget.isFav == true)
           FavIconSec(
               productId: widget.productId,

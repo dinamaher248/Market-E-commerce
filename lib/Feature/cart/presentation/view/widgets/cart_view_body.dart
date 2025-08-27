@@ -51,7 +51,7 @@ class _CartViewBodyState extends State<CartViewBody> {
                         imageWidth: 40.w,
                         imageHight: 120,
                         productImage: product.images.isNotEmpty
-                            ? "${product.images[0].replaceAll('\\', '/')}"
+                            ? product.images[0].replaceAll('\\', '/')
                             : ImagePathes.notExistPhoto,
                         price: "${product.price} LE",
                         rating: product.rating!.toStringAsFixed(1),

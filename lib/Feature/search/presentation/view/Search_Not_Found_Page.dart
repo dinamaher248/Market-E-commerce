@@ -26,7 +26,7 @@ class _SearchNotFoundPageState extends State<SearchNotFoundPage> {
             SizedBox(
               height: 2.h,
             ),
-            SearchWidget(),
+            const SearchWidget(),
             SizedBox(
               height: 3.h,
             ),
@@ -34,7 +34,7 @@ class _SearchNotFoundPageState extends State<SearchNotFoundPage> {
             SizedBox(
               height: 2.h,
             ),
-            TopSearchListWidget(),
+            const TopSearchListWidget(),
             
            
             //if search not found

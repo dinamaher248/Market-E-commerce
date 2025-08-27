@@ -40,7 +40,7 @@ class _FavViewContentState extends State<FavViewContent> {
                         imageWidth: double.infinity,
                         imageHight: 120,
                         productImage: product.images.isNotEmpty
-                            ? "${product.images[0].replaceAll('\\', '/')}"
+                            ? product.images[0].replaceAll('\\', '/')
                             : ImagePathes.notExistPhoto,
                         productName: product.title,
                         isAdd: true,

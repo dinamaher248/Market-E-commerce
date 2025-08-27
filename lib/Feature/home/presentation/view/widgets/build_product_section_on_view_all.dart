@@ -33,9 +33,9 @@ Widget buildProductSection(bool isScrollerV, bool showInternalLoading) {
             )
           : const SizedBox.shrink();
     } else if (state is ProductError) {
-      return Center(child: Text("${state.errMessage}"));
+      return Center(child: Text(state.errMessage));
     } else {
-      return Center(child: Text("No products available"));
+      return const Center(child: Text("No products available"));
     }
   });
 }
@@ -70,7 +70,7 @@ class ProductInHomePage extends StatelessWidget {
                     imageWidth: 40.w,
                     imageHight: 120,
                     productImage: product.images.isNotEmpty
-                        ? "${product.images[0].replaceAll('\\', '/')}"
+                        ? product.images[0].replaceAll('\\', '/')
                         : ImagePathes.notExistPhoto,
                     price: "${product.price} LE",
                     rating: product.rating!.toStringAsFixed(1),
@@ -116,7 +116,7 @@ class ProductsInVerticalPage extends StatelessWidget {
                     imageWidth: double.infinity,
                     imageHight: 120,
                     productImage: product.images.isNotEmpty
-                        ? "${product.images[0].replaceAll('\\', '/')}"
+                        ? product.images[0].replaceAll('\\', '/')
                         : ImagePathes.notExistPhoto,
                     productName: product.title,
                     isAdd: true,

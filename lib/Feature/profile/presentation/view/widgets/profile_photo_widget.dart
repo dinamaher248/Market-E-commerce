@@ -50,11 +50,12 @@ class _ProfilePhotoWidgetState extends State<ProfilePhotoWidget> {
   //     await context.read<AddImageCubit>().uploadImage(pickedImage!);
   //   }
   // }
+  @override
   Widget build(BuildContext context) {
     return Stack(
       alignment: Alignment.bottomRight,
       children: [
-        CircleAvatar(
+        const CircleAvatar(
           radius: 55,
           backgroundImage: AssetImage(ImagePathes.profile),
         ),
@@ -87,7 +88,7 @@ class _ProfilePhotoWidgetState extends State<ProfilePhotoWidget> {
           // },
           child: Container(
             padding: const EdgeInsets.all(6),
-            decoration: BoxDecoration(
+            decoration: const BoxDecoration(
               color: Colors.white,
               shape: BoxShape.circle,
             ),

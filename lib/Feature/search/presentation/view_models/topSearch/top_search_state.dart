@@ -1,4 +1,3 @@
-import 'package:marketi_ecommers/Feature/home/data/models/product_model.dart';
 
 import '../../../data/models/top_search_model.dart';
 

@@ -14,7 +14,7 @@ import '../../../../core/widgets/core/custom_button.dart';
 import '../../../../core/widgets/core/text_field_widget.dart';
 
 class ForgetPasswordWithMail extends StatefulWidget {
-  ForgetPasswordWithMail({super.key});
+  const ForgetPasswordWithMail({super.key});
 
   @override
   State<ForgetPasswordWithMail> createState() => _ForgetPasswordWithMailState();
@@ -69,7 +69,7 @@ class _ForgetPasswordWithMailState extends State<ForgetPasswordWithMail> {
                   height: 3.h,
                 ),
                 State is resetPassLoading
-                    ? CircularProgressIndicator(
+                    ? const CircularProgressIndicator(
                         color: PrimaryColor,
                       )
                     : CustomButton(

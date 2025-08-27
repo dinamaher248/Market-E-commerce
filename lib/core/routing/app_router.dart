@@ -84,19 +84,19 @@ class AppRouter {
           ),
           GoRoute(
             path: forgetPasswordWithPhone,
-            builder: (context, state) => ForgetPasswordWithPhone(),
+            builder: (context, state) => const ForgetPasswordWithPhone(),
           ),
           GoRoute(
             path: forgetPasswordWithMail,
-            builder: (context, state) => ForgetPasswordWithMail(),
+            builder: (context, state) => const ForgetPasswordWithMail(),
           ),
           GoRoute(
             path: verifyCodeWithPhone,
-            builder: (context, state) => VerifyCodeWithPhone(),
+            builder: (context, state) => const VerifyCodeWithPhone(),
           ),
           GoRoute(
             path: verifyCodeWithMail,
-            builder: (context, state) => VerifyCodeWithMail(),
+            builder: (context, state) => const VerifyCodeWithMail(),
           ),
           GoRoute(
             path: confirmationNewPass,
@@ -108,11 +108,11 @@ class AppRouter {
           ),
           GoRoute(
             path: successOrderPage,
-            builder: (context, state) => SuccessOrderPage(),
+            builder: (context, state) => const SuccessOrderPage(),
           ),
           GoRoute(
             path: cartViewPath,
-            builder: (context, state) => CartView(),
+            builder: (context, state) => const CartView(),
           ),
           GoRoute(
             path: searchNotFoundPage,
@@ -148,11 +148,11 @@ class AppRouter {
               }),
           GoRoute(
             path: profilePath,
-            builder: (context, state) => ProfileView(),
+            builder: (context, state) => const ProfileView(),
           ),
           GoRoute(
             path: editProfilePath,
-            builder: (context, state) => EditProfilePage(),
+            builder: (context, state) => const EditProfilePage(),
           ),
           GoRoute(
               path: checkOutPath,
@@ -163,7 +163,7 @@ class AppRouter {
           GoRoute(
             path: favoritesPath,
             builder: (context, state) {
-              const favView = const FavView();
+              const favView = FavView();
               return favView;
             },
           ),

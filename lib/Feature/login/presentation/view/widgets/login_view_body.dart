@@ -47,7 +47,7 @@ class _LoginViewBodyState extends State<LoginViewBody> {
               SizedBox(
                 height: 4.h,
               ),
-              SkipSection(),
+              const SkipSection(),
               SizedBox(
                 height: 4.h,
               ),
@@ -63,7 +63,7 @@ class _LoginViewBodyState extends State<LoginViewBody> {
                 height: 2.h,
               ),
               State is SignInLoading
-                  ? CircularProgressIndicator(
+                  ? const CircularProgressIndicator(
                       color: PrimaryColor,
                     )
                   : CustomButton(
@@ -79,7 +79,7 @@ class _LoginViewBodyState extends State<LoginViewBody> {
               ),
               SocialLoginButtons(context),
               SizedBox(height: 2.h),
-              ToRegisterSection(),
+              const ToRegisterSection(),
               SizedBox(height: 3.h),
             ],
           ),

@@ -41,6 +41,7 @@ class _DetailsPopularProductSectionState
     }
   }
 
+  @override
   Widget build(BuildContext context) {
     return widget.isFav
         ? buildFavSection(widget.showInternalLoading,widget.products!)

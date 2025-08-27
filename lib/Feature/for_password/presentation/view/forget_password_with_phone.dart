@@ -12,7 +12,7 @@ import '../../../../core/widgets/core/text_field_widget.dart';
 import '../../../../core/widgets/core/custom_text__widget.dart';
 
 class ForgetPasswordWithPhone extends StatefulWidget {
-  ForgetPasswordWithPhone({super.key});
+  const ForgetPasswordWithPhone({super.key});
 
   @override
   State<ForgetPasswordWithPhone> createState() =>

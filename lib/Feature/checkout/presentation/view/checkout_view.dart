@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:go_router/go_router.dart';
-import 'package:marketi_ecommers/core/widgets/core/custom_text__widget.dart';
 import 'package:sizer/sizer.dart';
 import '../../../../core/routing/app_router.dart';
 import '../../../../core/widgets/bar_widget.dart';

@@ -14,8 +14,6 @@ final ColorScheme lightColorScheme = const ColorScheme(
   onSecondary: Colors.white,
   error: Colors.red,
   onError: Colors.white,
-  background: Colors.white,
-  onBackground: TextColor,
   surface: Colors.white,
   onSurface: TextColor,
 ).copyWith(
@@ -33,8 +31,6 @@ final ColorScheme darkColorScheme = const ColorScheme(
   onSecondary: Colors.black,
   error: Colors.redAccent,
   onError: Colors.black,
-  background: Color(0xFF121212),
-  onBackground: Colors.white,
   surface: Color(0xFF1E1E1E),
   onSurface: Colors.white,
 ).copyWith(
@@ -47,7 +43,7 @@ final ColorScheme darkColorScheme = const ColorScheme(
 final ThemeData lightTheme = ThemeData(
   colorScheme: lightColorScheme,
   useMaterial3: true,
-  scaffoldBackgroundColor: lightColorScheme.background,
+  scaffoldBackgroundColor: lightColorScheme.surface,
   appBarTheme: const AppBarTheme(
     backgroundColor: Colors.white,
     foregroundColor: TextColor,
@@ -110,7 +106,7 @@ final ThemeData lightTheme = ThemeData(
 final ThemeData darkTheme = ThemeData(
   colorScheme: darkColorScheme,
   useMaterial3: true,
-  scaffoldBackgroundColor: darkColorScheme.background,
+  scaffoldBackgroundColor: darkColorScheme.surface,
   appBarTheme: AppBarTheme(
     backgroundColor: darkColorScheme.surface,
     foregroundColor: darkColorScheme.onSurface,
@@ -120,11 +116,11 @@ final ThemeData darkTheme = ThemeData(
       color: darkColorScheme.onSurface,
     ),
   ),
-  floatingActionButtonTheme: FloatingActionButtonThemeData(
+  floatingActionButtonTheme: const FloatingActionButtonThemeData(
     backgroundColor: PrimaryColor, // زر أزرق
     foregroundColor: Colors.white, // الأيقونة / النص أبيض
-    shape: const CircleBorder(), // مهم علشان Material3 مايفرضش ستايل تاني
-    extendedTextStyle: const TextStyle(
+    shape: CircleBorder(), // مهم علشان Material3 مايفرضش ستايل تاني
+    extendedTextStyle: TextStyle(
       color: Colors.white, // النص الأبيض في FAB Extended
     ),
   ),

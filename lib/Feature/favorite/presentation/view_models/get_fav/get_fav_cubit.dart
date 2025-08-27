@@ -1,6 +1,5 @@
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:dio/dio.dart';
-import 'package:marketi_ecommers/Feature/cart/presentation/view_models/get_cart/get_cart_state.dart';
 import 'package:marketi_ecommers/Feature/favorite/presentation/view_models/get_fav/get_fav_state.dart';
 import 'package:marketi_ecommers/Feature/home/data/models/product_model.dart';
 import 'package:marketi_ecommers/core/Api/api_consumer.dart';

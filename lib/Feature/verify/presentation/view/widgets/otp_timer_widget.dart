@@ -1,11 +1,12 @@
 import 'dart:async';
 import 'package:flutter/material.dart';
 import 'package:marketi_ecommers/core/utils/colors.dart';
-import 'package:sizer/sizer.dart';
 
 import '../../../../../core/widgets/core/custom_text__widget.dart';
 
 class OtpTimer extends StatefulWidget {
+  const OtpTimer({super.key});
+
   @override
   _OtpTimerState createState() => _OtpTimerState();
 }
@@ -24,7 +25,7 @@ class _OtpTimerState extends State<OtpTimer> {
   void startTimer() {
     _canResend = false;
     _start = 60;
-    _timer = Timer.periodic(Duration(seconds: 1), (timer) {
+    _timer = Timer.periodic(const Duration(seconds: 1), (timer) {
       if (_start == 0) {
         setState(() {
           _canResend = true;
@@ -52,7 +53,7 @@ class _OtpTimerState extends State<OtpTimer> {
           _canResend ? "00:00" : "00:${_start.toString().padLeft(2, '0')}",
           style: TextStyle(fontSize: 18, color: Colors.grey[700]),
         ),
-        SizedBox(height: 10),
+        const SizedBox(height: 10),
         GestureDetector(
           onTap: _canResend
               ? () {
@@ -62,7 +63,7 @@ class _OtpTimerState extends State<OtpTimer> {
               : null,
           child: CustomTextWidget(
             text: 'Resend Code',
-            color: _canResend ? PrimaryColor : Color(0xff51526C),
+            color: _canResend ? PrimaryColor : const Color(0xff51526C),
             fontSize: 16,
             fontWeight: FontWeight.w600,
           ),

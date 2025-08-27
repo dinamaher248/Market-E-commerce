@@ -1,7 +1,6 @@
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:marketi_ecommers/Feature/cart/presentation/view_models/delete_from_cart/delete_from_cart_cubit.dart';
 import 'package:marketi_ecommers/Feature/cart/presentation/view_models/get_cart/get_cart_cubit.dart';
-import 'package:marketi_ecommers/Feature/checkout/data/models/check_out_model.dart';
 import 'package:marketi_ecommers/Feature/checkout/presentation/view_model/checkout_cubit/checkout_cubit.dart';
 import 'package:marketi_ecommers/Feature/favorite/presentation/view_models/add_to_fav/add_to_fav_cubit.dart';
 import 'package:marketi_ecommers/Feature/for_password/presentation/view_models/send_resete_password_cubit.dart';

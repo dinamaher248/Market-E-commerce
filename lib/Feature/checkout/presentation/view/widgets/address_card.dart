@@ -11,10 +11,10 @@ Widget addressCard() {
         children: [
           const Icon(Icons.home, color: Colors.blue),
           const SizedBox(width: 8),
-          Expanded(
+          const Expanded(
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.start,
-              children: const [
+              children: [
                 Text("Home", style: TextStyle(fontWeight: FontWeight.bold)),
                 Text("Anshas, Al-sharqia, Egypt."),
                 Text("Mobile: +20 101 840 3043"),

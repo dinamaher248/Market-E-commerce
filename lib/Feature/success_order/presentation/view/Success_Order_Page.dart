@@ -7,7 +7,7 @@ import 'package:sizer/sizer.dart';
 
 
 class SuccessOrderPage extends StatefulWidget {
-  SuccessOrderPage({super.key});
+  const SuccessOrderPage({super.key});
 
   @override
   State<SuccessOrderPage> createState() => _SuccessOrderPageState();

@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:go_router/go_router.dart';
-import 'package:google_fonts/google_fonts.dart';
 import 'package:marketi_ecommers/Feature/for_password/presentation/view_models/reset_pass_state/resete_pass_state.dart';
 import 'package:marketi_ecommers/core/routing/app_router.dart';
 import 'package:sizer/sizer.dart';
@@ -145,7 +144,7 @@ class _ConfirmationNewPassState extends State<ConfirmationNewPass> {
                   height: 3.h,
                 ),
                 State is resetPassLoading
-                    ? CircularProgressIndicator(
+                    ? const CircularProgressIndicator(
                         color: PrimaryColor,
                       )
                     : CustomButton(

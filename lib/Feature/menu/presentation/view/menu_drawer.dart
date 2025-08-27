@@ -23,16 +23,16 @@ class NavigationMenuDrawerWidget extends StatelessWidget {
                     onTap: () {
                       context.go(AppRouter.profilePath);
                     },
-                    child: CircleAvatar(
+                    child: const CircleAvatar(
                       radius: 25,
                       backgroundImage:
                           AssetImage(ImagePathes.profile),
                     ),
                   ),
                   const SizedBox(width: 12),
-                  Column(
+                  const Column(
                     crossAxisAlignment: CrossAxisAlignment.start,
-                    children: const [
+                    children: [
                       Text(
                         "Welcome,",
                         style: TextStyle(

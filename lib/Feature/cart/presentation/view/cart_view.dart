@@ -22,6 +22,7 @@ class _CartViewState extends State<CartView> {
     context.read<GetCartCubit>().fetchProducts();
   }
 
+  @override
   Widget build(BuildContext context) {
     return Scaffold(
       body: Column(

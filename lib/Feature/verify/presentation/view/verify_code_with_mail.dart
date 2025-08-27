@@ -15,7 +15,7 @@ import 'widgets/pin_code_widget.dart';
 import '../../../register/presentation/view_models/signUP_cubit/signUP_state.dart';
 
 class VerifyCodeWithMail extends StatefulWidget {
-  VerifyCodeWithMail({super.key});
+  const VerifyCodeWithMail({super.key});
 
   @override
   State<VerifyCodeWithMail> createState() => _VerifyCodeWithMailState();
@@ -72,7 +72,7 @@ class _VerifyCodeWithMailState extends State<VerifyCodeWithMail> {
                   },
                 ),
                 SizedBox(height: 3.h),
-                OtpTimer(),
+                const OtpTimer(),
                 SizedBox(height: 20.h),
               ],
             ),

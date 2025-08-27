@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:flutter/widgets.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 
 import '../../../../../favorite/presentation/view_models/add_to_fav/add_to_fav_cubit.dart';
@@ -40,6 +39,7 @@ class _FavIconSecState extends State<FavIconSec> {
     }
   }
 
+  @override
   Widget build(BuildContext context) {
     return Positioned(
       top: -2,

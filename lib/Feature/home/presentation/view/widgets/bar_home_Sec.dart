@@ -24,6 +24,7 @@ class _BarHomeSectionState extends State<BarHomeSection> {
     context.read<UserDataCubit>().fetchUserData();
   }
 
+  @override
   Widget build(BuildContext context) {
     return BlocBuilder<UserDataCubit, UserDataState>(builder: (context, state) {
       if (state is UserDataLoaded) {
@@ -56,7 +57,7 @@ class _BarHomeSectionState extends State<BarHomeSection> {
                 style: TextStyle(
                   fontSize: 18.sp,
                   fontWeight: FontWeight.w500,
-                  color: Theme.of(context).colorScheme.onBackground,
+                  color: Theme.of(context).colorScheme.onSurface,
                 ),
                 maxLines: 1,
                 minFontSize: 10,
@@ -73,7 +74,7 @@ class _BarHomeSectionState extends State<BarHomeSection> {
           ),
         );
       }
-      return SizedBox();
+      return const SizedBox();
     });
   }
 }

@@ -20,7 +20,7 @@ class AllBrandsPage extends StatelessWidget {
           SizedBox(
             height: 2.h,
           ),
-          SearchWidget(),
+          const SearchWidget(),
           SizedBox(
             height: 3.h,
           ),

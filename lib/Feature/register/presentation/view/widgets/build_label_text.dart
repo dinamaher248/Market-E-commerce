@@ -5,7 +5,7 @@ import '../../../../../core/utils/colors.dart';
 import '../../../../../core/widgets/core/custom_text__widget.dart';
 
 class BuildLabelText extends StatelessWidget {
-  BuildLabelText({required this.sizePaddding, required this.text});
+  BuildLabelText({super.key, required this.sizePaddding, required this.text});
   int sizePaddding;
   String text;
 

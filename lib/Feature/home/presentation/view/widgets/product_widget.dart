@@ -1,4 +1,3 @@
-import 'dart:typed_data';
 
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
@@ -175,7 +174,7 @@ class _ProductWidgetState extends State<ProductWidget> {
                     : Padding(
                         padding: EdgeInsets.only(left: 3.w),
                         child: Container(
-                          padding: EdgeInsets.symmetric(horizontal: 8),
+                          padding: const EdgeInsets.symmetric(horizontal: 8),
                           decoration: BoxDecoration(
                             color: Colors.blue.shade50,
                             borderRadius: BorderRadius.circular(20),
@@ -188,9 +187,9 @@ class _ProductWidgetState extends State<ProductWidget> {
                               IconButton(
                                 padding: EdgeInsets.zero,
                                 icon: quantity == 1
-                                    ? Icon(Icons.delete,
+                                    ? const Icon(Icons.delete,
                                         color: Colors.red, size: 18)
-                                    : Icon(Icons.remove,
+                                    : const Icon(Icons.remove,
                                         color: PrimaryColor, size: 18),
                                 onPressed: () {
                                   setState(() {
@@ -203,7 +202,7 @@ class _ProductWidgetState extends State<ProductWidget> {
                               ),
                               Text(
                                 "$quantity",
-                                style: TextStyle(
+                                style: const TextStyle(
                                   fontSize: 14,
                                   fontWeight: FontWeight.bold,
                                   color: Colors.black87,
@@ -211,7 +210,7 @@ class _ProductWidgetState extends State<ProductWidget> {
                               ),
                               IconButton(
                                 padding: EdgeInsets.zero,
-                                icon: Icon(Icons.add,
+                                icon: const Icon(Icons.add,
                                     color: PrimaryColor, size: 18),
                                 onPressed: () {
                                   setState(() {

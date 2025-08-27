@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:flutter/widgets.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:marketi_ecommers/Feature/home/presentation/view_models/banners/banners_state.dart';
 import 'package:marketi_ecommers/core/Api/endpoints.dart';
@@ -25,6 +24,7 @@ class _DetailsBannersSectionState extends State<DetailsBannersSection> {
     context.read<BannersCubit>().fetchProducts();
   }
 
+  @override
   Widget build(BuildContext context) {
     return BlocConsumer<BannersCubit, BannersState>(listener: (context, State) {
       if (State is BannersLoaded) {
@@ -71,9 +71,9 @@ class _DetailsBannersSectionState extends State<DetailsBannersSection> {
           child: const CircularProgressIndicator(),
         ) : const SizedBox.shrink();
       } else if (state is BannersError) {
-        return Center(child: Text("${state.errMessage}"));
+        return Center(child: Text(state.errMessage));
       } else {
-        return Center(child: Text("No Brands available"));
+        return const Center(child: Text("No Brands available"));
       }
     });
   }

@@ -49,7 +49,7 @@ class _VerifyCodeWithPhoneState extends State<VerifyCodeWithPhone> {
             ),
 
             SizedBox(height: 3.h),
-            OtpTimer(),
+            const OtpTimer(),
           ],
         ),
       ),

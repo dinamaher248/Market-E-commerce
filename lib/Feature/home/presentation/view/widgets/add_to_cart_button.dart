@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:flutter/widgets.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:sizer/sizer.dart';
 
@@ -37,7 +36,7 @@ class _AddToCartButtonState extends State<AddToCartButton> {
   Widget build(BuildContext context) {
     if (quantity > 0) {
       return Container(
-        padding: EdgeInsets.symmetric(horizontal: 8),
+        padding: const EdgeInsets.symmetric(horizontal: 8),
         decoration: BoxDecoration(
           color: Colors.blue.shade50,
           borderRadius: BorderRadius.circular(20),
@@ -51,7 +50,7 @@ class _AddToCartButtonState extends State<AddToCartButton> {
               padding: EdgeInsets.zero,
               icon: quantity == 1
                   ? const Icon(Icons.delete, color: Colors.red, size: 18)
-                  : Icon(Icons.remove, color: PrimaryColor, size: 18),
+                  : const Icon(Icons.remove, color: PrimaryColor, size: 18),
               onPressed: () {
                 setState(() {
                   quantity--;
@@ -66,7 +65,7 @@ class _AddToCartButtonState extends State<AddToCartButton> {
             ),
             IconButton(
               padding: EdgeInsets.zero,
-              icon: Icon(Icons.add, color: PrimaryColor, size: 18),
+              icon: const Icon(Icons.add, color: PrimaryColor, size: 18),
               onPressed: () {
                 setState(() {
                   quantity++;
@@ -87,17 +86,17 @@ class _AddToCartButtonState extends State<AddToCartButton> {
         context.read<AddToCartCubit>().addToProductCart(widget.productId);
       },
       style: ElevatedButton.styleFrom(
-        padding: EdgeInsets.symmetric(horizontal: 20, vertical: 5),
-        textStyle: TextStyle(fontSize: 16),
+        padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 5),
+        textStyle: const TextStyle(fontSize: 16),
         backgroundColor: Colors.white,
         shape: RoundedRectangleBorder(
           borderRadius: BorderRadius.circular(13),
-          side: BorderSide(color: PrimaryColor, width: 1.5),
+          side: const BorderSide(color: PrimaryColor, width: 1.5),
         ),
       ),
       child: Row(
         children: [
-          Icon(Icons.shopping_cart, color: PrimaryColor),
+          const Icon(Icons.shopping_cart, color: PrimaryColor),
           SizedBox(width: 2.w),
           CustomTextWidget(
             color: PrimaryColor,

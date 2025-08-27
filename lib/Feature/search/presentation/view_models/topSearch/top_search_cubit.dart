@@ -1,7 +1,5 @@
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:dio/dio.dart';
-import 'package:marketi_ecommers/Feature/home/data/models/product_model.dart';
-import 'package:marketi_ecommers/Feature/home/presentation/view_models/Product/product_state.dart';
 import 'package:marketi_ecommers/Feature/search/presentation/view_models/topSearch/top_search_state.dart';
 import 'package:marketi_ecommers/core/Api/api_consumer.dart';
 import 'package:marketi_ecommers/core/cache/cache_helper.dart';

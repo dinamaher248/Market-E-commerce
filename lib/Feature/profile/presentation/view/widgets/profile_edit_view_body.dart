@@ -1,19 +1,14 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:image_picker/image_picker.dart';
 import 'package:marketi_ecommers/Feature/profile/presentation/view/widgets/profile_photo_widget.dart';
 import 'package:sizer/sizer.dart';
-import 'dart:io';
-import 'package:cached_network_image/cached_network_image.dart';
 
 import '../../../../../core/Api/endpoints.dart';
 import '../../../../../core/cache/cache_helper.dart';
-import '../../../../../core/utils/image_pathes.dart';
 import '../../../../../core/widgets/bar_widget.dart';
 import '../../../../../core/widgets/core/custom_snack_bar.dart';
 import '../../../../../core/widgets/core/text_field_widget.dart';
 import '../../../data/models/user_data_model.dart';
-import '../../view_model/add_image/add_image_cubit.dart';
 import '../../view_model/user_edit/user_edit_cubit.dart';
 import '../../view_model/user_edit/user_edit_state.dart';
 
@@ -78,7 +73,7 @@ class _ProfileEditViewBodyState extends State<ProfileEditViewBody> {
                 children: [
                   BarWidget(textBar: "Edit Profile", isIcon: true),
                   SizedBox(height: 3.h),
-                  ProfilePhotoWidget(),
+                  const ProfilePhotoWidget(),
                   SizedBox(height: 3.h),
                   TextFieldWidget(
                     mailPassText: 'Name',

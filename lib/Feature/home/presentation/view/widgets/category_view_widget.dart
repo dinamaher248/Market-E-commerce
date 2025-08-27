@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
-import 'package:marketi_ecommers/core/utils/colors.dart';
 import 'package:marketi_ecommers/core/widgets/core/custom_text__widget.dart';
 import 'package:sizer/sizer.dart';
 
@@ -16,7 +15,7 @@ class CategoryViewWidget extends StatelessWidget {
         mainAxisAlignment: MainAxisAlignment.spaceBetween,
         children: [
           CustomTextWidget(
-              color: Theme.of(context).colorScheme.onBackground, //TextColor,
+              color: Theme.of(context).colorScheme.onSurface, //TextColor,
               fontSize: 5.w,
               fontWeight: FontWeight.w600,
               text: text),

@@ -38,7 +38,7 @@ class _RegisterViewBodyState extends State<RegisterViewBody> {
         return SingleChildScrollView(
           child: Column(
             children: [
-              RturnSection(),
+              const RturnSection(),
               SizedBox(
                 height: 3.h,
               ),
@@ -47,7 +47,7 @@ class _RegisterViewBodyState extends State<RegisterViewBody> {
                 height: 2.h,
               ),
               State is SignUpLoading
-                  ? CircularProgressIndicator(
+                  ? const CircularProgressIndicator(
                       color: PrimaryColor,
                     )
                   : CustomButton(

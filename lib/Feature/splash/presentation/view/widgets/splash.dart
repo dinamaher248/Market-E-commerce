@@ -23,6 +23,7 @@ class _SplashBodyState extends State<SplashBody> {
     context.go(AppRouter.onBoarding1Path);
   }
 
+  @override
   Widget build(BuildContext context) {
     return Center(
       child: Image.asset(
