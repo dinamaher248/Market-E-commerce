@@ -106,9 +106,9 @@ class _ProfileViewBodyState extends State<ProfileViewBody> {
                 text: "Log Out",
                 onTap: () async {
                   final prefs = await SharedPreferences.getInstance();
-                 // await prefs.clear();
+                  await prefs.clear();
                   await prefs.remove("token");
-                  context.go(AppRouter.splashPath);
+                  context.go(AppRouter.loginPath);
                 },
                 color: Colors.red,
               ),

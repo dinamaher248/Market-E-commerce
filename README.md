@@ -72,9 +72,9 @@ _User information and settings_
 
 ## 📱 Device Preview
 
-| Splash Screen | Product Details | Shopping Cart |
+| Prototype Screen App |
 |-------------|----------------|---------------|
-| ![Splash](screenshots/splash_screen.png) | ![Onboarding](screenshots/onboarding.png) | ![Prototype Screen](Video/MarketApp.mp4) |
+| ![Part1](screenshots/MarketApp_Part1.gif) | ![Part2](screenshots/MarketApp_part2.gif) | ![Part3 ](screenshots/MarketApp_Part3.gif) | | ![Part4](screenshots\MarketApp_part4.gif) |
 
 ## License
 
