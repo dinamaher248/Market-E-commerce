@@ -66,8 +66,15 @@ _Detailed product information_
 ![Shopping Cart](screenshots/shopping_cart.png)
 _Cart management interface_
 
-![User Profile](screenshots/user_profile.png)
+![User Profile](Video/MarketApp.mp4)
 _User information and settings_
+
+
+## 📱 Device Preview
+
+| Splash Screen | Product Details | Shopping Cart |
+|-------------|----------------|---------------|
+| ![Splash](screenshots/splash_screen.png) | ![Onboarding](screenshots/onboarding.png) | ![Prototype Screen](Video/MarketApp.mp4) |
 
 ## License
 
