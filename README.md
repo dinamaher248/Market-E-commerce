@@ -75,25 +75,24 @@ Market E-commerce is a comprehensive mobile shopping application built with Flut
 |-----------------|----------------|
 | ![Favorites Light](screenshots/fav_screen_light.png) | ![Favorites Dark](screenshots/fav_dark_screen.png) |
 
-### Profile & Edit
-![Profile](screenshots/profile_screen.png)
-![Edit Profile](screenshots/edit_profile_screen.png)
+### Profile & Edit#
+| Profile view | Edit Profile |
+|--------------|--------------|
+| ![Profile](screenshots/profile_screen.png) | ![Edit Profile](screenshots/edit_profile_screen.png) |
 
 ### Menu & Splash
-![Menu](screenshots/menu_screen.png)
-![Splash](screenshots/splash_screen.png)
+| Menu Light | Menu Dark |
+|------------|-----------|
+|![Menu Light](screenshots/menu_screen.png)|![Menu Dark](screenshots/menu_dark_screen.png)|
 
 ---
 
-## 🎥 App Demo
 
-![Demo Part 1](screenshots/MarketApp_Part1.gif)
-![Demo Part 2](screenshots/MarketApp_part2.gif)
-![Demo Part 3](screenshots/MarketApp_part3.gif)
-![Demo Part 4](screenshots/MarketApp_part4.gif)
+## 📱 App Demo
 
-
-## 📱 Device Preview
+| Part 1 |
+|--------|
+| ![Part1](screenshots/MarketApp_Part1.gif) |
 
 | Part 2 |
 |--------|
