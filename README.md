@@ -50,53 +50,64 @@ Market E-commerce is a comprehensive mobile shopping application built with Flut
 ```
 ## 📸 Screenshots
 
-### Onboarding
-![Onboarding 1](screenshots/onboarding1.png)
-![Onboarding 2](screenshots/onboarding2.png)
-![Onboarding 3](screenshots/onboarding3.png)
+### 🔹 Onboarding
+| Splash | Onboarding 1 | Onboarding 2 | Onboarding 3 |
+|--------|--------------|--------------|--------------|
+| ![Splash](screenshots/splash_screen.png) | ![Onboarding 1](screenshots/onboarding1.png) | ![Onboarding 2](screenshots/onboarding2.png) | ![Onboarding 3](screenshots/onboarding3.png) |
 
-### Authentication
-![Login](screenshots/login_screen.png)
-![Register](screenshots/register_screen.png)
-![Forget Password (Mail)](screenshots/forget_pass_using_mail.png)
-![Forget Password (Phone)](screenshots/forget_pass_using_phone.png)
+### 🔹 Authentication
+| Login | Register | Forget Password (Mail) | Forget Password (Phone) |
+|-------|----------|--------------------------|--------------------------|
+| ![Login](screenshots/login_screen.png) | ![Register](screenshots/register_screen.png) | ![Forget Password (Mail)](screenshots/forget_pass_using_mail.png) | ![Forget Password (Phone)](screenshots/forget_pass_using_phone.png) |
 
-### Home & Products
-![Home](screenshots/home_screen.png)
-![All Products](screenshots/allproducts_screen.png)
-![Product Details](screenshots/product_details.png)
+### 🔹 Home & Products
+| Home | All Products | Product Details |
+|------|--------------|-----------------|
+| ![Home](screenshots/home_screen.png) | ![All Products](screenshots/allproducts_screen.png) | ![Product Details](screenshots/product_details.png) |
 
-### Cart
-![Cart Light](screenshots/cart_screen_light.png)
-![Cart Dark](screenshots/cart_dark_screen.png)
+### 🔹 Cart
+| Cart Light | Cart Dark |
+|------------|-----------|
+| ![Cart Light](screenshots/cart_screen_light.png) | ![Cart Dark](screenshots/cart_dark_screen.png) |
 
-### Favorites
-![Favorites Light](screenshots/fav_screen_light.png)
-![Favorites Dark](screenshots/fav_dark_screen.png)
+### 🔹 Favorites
+| Favorites Light | Favorites Dark |
+|-----------------|----------------|
+| ![Favorites Light](screenshots/fav_screen_light.png) | ![Favorites Dark](screenshots/fav_dark_screen.png) |
 
-### Profile & Edit
-![Profile](screenshots/profile_screen.png)
-![Edit Profile](screenshots/edit_profile_screen.png)
+### 🔹 Profile & Edit
+| Profile | Edit Profile |
+|---------|--------------|
+| ![Profile](screenshots/profile_screen.png) | ![Edit Profile](screenshots/edit_profile_screen.png) |
 
-### Menu & Splash
-![Menu](screenshots/menu_screen.png)
-![Splash](screenshots/splash_screen.png)
+### 🔹 Menu
+| Menu Light| Menu Dark|
+|-----------|----------|
+| ![Menu](screenshots/menu_screen.png) |  ![Menu Dark](screenshots/menu_dark_screen.png) |
+
 
 ---
 
-## 🎥 App Demo
+### 🎥📱 App Preview (GIFs)
+| Part 1 |
+|--------|
+| ![Part1](screenshots/MarketApp_Part1.gif) | 
 
-![Demo Part 1](screenshots/MarketApp_Part1.gif)
-![Demo Part 2](screenshots/MarketApp_part2.gif)
-![Demo Part 3](screenshots/MarketApp_part3.gif)
-![Demo Part 4](screenshots/MarketApp_part4.gif)
+| Part 2 |
+|--------|
+| ![Part2](screenshots/MarketApp_part2.gif) |
+
+| Part 3 |
+|--------|
+| ![Part3](screenshots/MarketApp_Part3.gif) |
+
+| Part 4 |
+|--------|
+| ![Part4](screenshots/MarketApp_part4.gif) |
+
+---
 
 
-## 📱 Device Preview
-
-| Prototype Screen App |
-|-------------|----------------|---------------|
-| ![Part1](screenshots/MarketApp_Part1.gif) | ![Part2](screenshots/MarketApp_part2.gif) | ![Part3 ](screenshots/MarketApp_Part3.gif) | | ![Part4](screenshots\MarketApp_part4.gif) |
 
 ## License
 
