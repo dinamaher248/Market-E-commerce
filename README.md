@@ -48,26 +48,48 @@ Market E-commerce is a comprehensive mobile shopping application built with Flut
 ├── images/                        # App images and assets
 └── web/                           # Web platform configuration
 ```
+## 📸 Screenshots
 
-## Screenshots
+### Onboarding
+![Onboarding 1](screenshots/onboarding1.png)
+![Onboarding 2](screenshots/onboarding2.png)
+![Onboarding 3](screenshots/onboarding3.png)
 
-![Splash Screen](screenshots/splash_screen.png)
-_App introduction and branding_
+### Authentication
+![Login](screenshots/login_screen.png)
+![Register](screenshots/register_screen.png)
+![Forget Password (Mail)](screenshots/forget_pass_using_mail.png)
+![Forget Password (Phone)](screenshots/forget_pass_using_phone.png)
 
-![Onboarding](screenshots/onboarding.png)
-_User onboarding experience_
-
-![Home Screen](screenshots/home_screen.png)
-_Main product browsing interface_
-
+### Home & Products
+![Home](screenshots/home_screen.png)
+![All Products](screenshots/allproducts_screen.png)
 ![Product Details](screenshots/product_details.png)
-_Detailed product information_
 
-![Shopping Cart](screenshots/shopping_cart.png)
-_Cart management interface_
+### Cart
+![Cart Light](screenshots/cart_screen_light.png)
+![Cart Dark](screenshots/cart_dark_screen.png)
 
-![User Profile](Video/MarketApp.mp4)
-_User information and settings_
+### Favorites
+![Favorites Light](screenshots/fav_screen_light.png)
+![Favorites Dark](screenshots/fav_dark_screen.png)
+
+### Profile & Edit
+![Profile](screenshots/profile_screen.png)
+![Edit Profile](screenshots/edit_profile_screen.png)
+
+### Menu & Splash
+![Menu](screenshots/menu_screen.png)
+![Splash](screenshots/splash_screen.png)
+
+---
+
+## 🎥 App Demo
+
+![Demo Part 1](screenshots/MarketApp_Part1.gif)
+![Demo Part 2](screenshots/MarketApp_part2.gif)
+![Demo Part 3](screenshots/MarketApp_part3.gif)
+![Demo Part 4](screenshots/MarketApp_part4.gif)
 
 
 ## 📱 Device Preview
